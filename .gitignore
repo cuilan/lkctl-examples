@@ -1,0 +1,14 @@
+# Binaries for programs and plugins
+*.dll
+*.so
+*.dylib
+
+# Go build/test artifacts
+*.test
+*.out
+
+# IDE and OS files
+.idea
+.DS_Store
+logs
+vendor

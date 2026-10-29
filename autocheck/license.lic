@@ -1,0 +1,12 @@
+{
+  "license_id": "2a201d70-72c0-3c69-08f9-32c5c5b51a5e",
+  "customer": "某某公司",
+  "product": "leosap",
+  "fingerprint": "090499363c0b2202d7f025cd7dc2dedce65421c0a25eaccb55b890e64bf73625",
+  "issued_at": "2026-10-29T16:27:00.7531744+08:00",
+  "expires_at": "2027-10-29T16:27:00.7531744+08:00",
+  "features": [
+    "full"
+  ],
+  "signature": "BlFC9A3thlBzfAPAVijxzqWW9fVaBLnO95jtbJjCs23aaHefo4pxuvhyNBW5zOtm/ziv/P+sCS4Icz+R4rEY6n9GDoUhwdPjzCyVEBTltpTLxnLu9ILC+2kyvayD8sQQ2TvW7DVGhsSYeJ2le/LG5HVYB8LisJ/y+m6V3kA8LwQy/idZdPjK8R0QiapyVcUUahE6l4YlMg8NQHmQzhr4RmQikVuyTZH75b731c5ept6aqz9KMvM7nCGY4YfdS8bfnfEoPp4rGKJji+WESQhzACJDiyBoyYnrFd36IYi9NvDn+hjYVD7sraSVH6LzmfaMITssQA1UGerYAXkq5KoJwQ=="
+}
