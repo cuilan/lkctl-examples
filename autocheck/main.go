@@ -7,7 +7,7 @@
 //
 //  2. 在 main 包 import 该子包（注册公钥）和 autocheck（自动校验）：
 //     import _ "autocheck/licensekey"
-//     import _ "github.com/cuilan/license-key-verify/autocheck"
+//     import _ "github.com/cuilan/license-key-verify/v2/autocheck"
 //
 // main 里不写任何校验代码——autocheck 在 init 阶段自动定位并校验
 // license.lic，失败时打印原因并以退出码 1 结束进程。

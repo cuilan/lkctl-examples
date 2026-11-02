@@ -23,14 +23,14 @@ lkctl-examples/
 |---|---|---|
 | Integration code | 2 import lines, zero check code in `main` | 1 import + 1 line `license.MustCheck()` |
 | Check timing | automatically in `init()` | controlled by you (start of `main` or anywhere) |
-| Check result | not available (exits on failure) | full `Result` (customer, features, expiry) |
+| Check result | not available (exits on failure) | full `Result` (customer, features, expiry; use `result.HasFeature("full")` for feature gating) |
 | Best for | you forked license-key-verify and want minimal code | standalone module usage, feature gating, showing license info in UI |
 
 > **Fork scenario**: if you forked license-key-verify and used `lkctl embed` to overwrite its `pkg/license/key.go`, a single `import _ ".../v2/autocheck"` line is enough (key.go lives in a dependency package of autocheck, so init order is naturally correct). Both examples here use the module standalone, so key.go sits in a local `licensekey/` sub-package and **must be imported before autocheck**.
 
 ## Quick Start
 
-Prerequisites: [lkctl](https://github.com/cuilan/license-key-verify/releases/latest) downloaded, Go 1.23+ installed, and this repo checked out next to license-key-verify (the examples' `go.mod` uses a `replace` to the local checkout for offline reproduction; in your own project drop the `replace` and use `go get github.com/cuilan/license-key-verify/v2@v2.0.0`).
+Prerequisites: [lkctl](https://github.com/cuilan/license-key-verify/releases/latest) downloaded, Go 1.23+ installed, and this repo checked out next to license-key-verify (the examples' `go.mod` uses a `replace` to the local checkout for offline reproduction; in your own project drop the `replace` and use `go get github.com/cuilan/license-key-verify/v2@v2.0.1`).
 
 ```bash
 # 1. Generate a key pair (on your machine; never ship the private key)
@@ -46,8 +46,8 @@ cd sdk && go build -o sdk.exe . && cd ..
 
 # 4. Grab the fingerprint of this machine and sign a license for each
 lkctl fingerprint
-lkctl sign --private-key keys/private.pem --fingerprint <fingerprint> --out autocheck/license.lic
-lkctl sign --private-key keys/private.pem --fingerprint <fingerprint> --out sdk/license.lic
+lkctl sign --private-key keys/private.pem --fingerprint <fingerprint> --features full,api --out autocheck/license.lic
+lkctl sign --private-key keys/private.pem --fingerprint <fingerprint> --features full,api --out sdk/license.lic
 
 # 5. Run
 ./autocheck/autocheck.exe     # license OK, application starts... / 成功启动

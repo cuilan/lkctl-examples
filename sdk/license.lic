@@ -1,9 +1,13 @@
 {
-  "license_id": "cb759cf5-cff0-7f91-79e0-b811df7177a2",
-  "customer": "示例客户",
-  "product": "License Key Verify Tool",
+  "license_id": "80dbaedf-6932-6878-678a-3f2d9de6248b",
+  "customer": "lkctl-examples",
+  "product": "lkctl-demo",
   "fingerprint": "090499363c0b2202d7f025cd7dc2dedce65421c0a25eaccb55b890e64bf73625",
-  "issued_at": "2026-10-29T18:09:38.9640394+08:00",
-  "expires_at": "2027-10-29T18:09:38.9640394+08:00",
-  "signature": "m0e3+k8WIrk3f96hkSidOiSo5SpxTmAE25JLsqZNKp3hrMNJiE5UaMABW37VL+oQPMoudBlgArx9WgFklbwraDYNeckmQit5E9fqxKf4pMGL4P0S6WIUEqCz6mb1IEyYi0SCPR/6Clem3WjxSmBlB/g1Y3qkP1c6aGRx1BsFGSOS3zrLsI1veP5fEtqG3oQozRjo0QgdCqPWgRVzHQRnnMTs6n+q+yLKSGhgS+3uAgy9RUm0CxxKLmLgF3Odn6WPrqEzW7B8yvcKscQCDpTAgzw94Xr2QWmZuViZqW/eCESJplBIJ8j/I3mx3IQeIV7V4/GOymkjeOi6XE6PBcf7dw=="
+  "issued_at": "2026-11-02T09:54:36.4529191+08:00",
+  "expires_at": "2027-11-02T09:54:36.4529191+08:00",
+  "features": [
+    "full",
+    "api"
+  ],
+  "signature": "V0GYG3CfyP53a1RaCuEMwWpJLt1swyiwAqNNmeeZ+u1BuIQ6bHmWqBKY4Jlm1iUNk2YXxm1maiUgnfLwgoMCFCUrC1gzstlmYc07vr2YhUbaULslP5As8J8Dqbreg0bj/WBngDdsga6Nu4IQ1D7nRuZQWQq2r9bs2XlFVfPdtEkxMQg6wxPAdruV4qAHMf+H2/ycHTtX/xCtcJHiOBGRXdLjL5k4nBvY7oiXdDslGhlNPZdn00LkelmIiLuiMpmtlYqMtiYUDsDLreSru3JMTKgMpcKomy1TDtSKFoZJyqSvy5KTLJ+eKCRbae6vo4IpxQHJFFijnT+IwD7TOrIu7w=="
 }

@@ -4,6 +4,7 @@
 *.dylib
 
 # Go build/test artifacts
+*.exe
 *.test
 *.out
 

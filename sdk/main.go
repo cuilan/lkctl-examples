@@ -7,7 +7,7 @@
 //
 //  2. 在 main 里显式调用校验 API：
 //     import _ "sdk/licensekey"                // 注册内嵌公钥
-//     import "github.com/cuilan/license-key-verify/pkg/license"
+//     import "github.com/cuilan/license-key-verify/v2/pkg/license"
 //     license.MustCheck()                      // 失败打印原因并退出码 1
 //
 // 相比 autocheck（示例 A），SDK 方式由你控制校验时机，并能拿到完整的
@@ -41,6 +41,7 @@ func main() {
 	if len(result.License.Features) > 0 {
 		fmt.Printf("licensed features: %v\n", result.License.Features)
 	}
+	fmt.Printf("full feature enabled: %v\n", result.HasFeature("full"))
 
 	fmt.Printf("expires in %d days\n", result.ExpiresIn/(24*3600))
 	fmt.Println("成功启动")

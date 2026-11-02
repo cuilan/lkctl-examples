@@ -23,14 +23,14 @@ lkctl-examples/
 |---|---|---|
 | 集成代码 | 2 行 import，`main` 零校验代码 | 1 行 import + 1 行 `license.MustCheck()` |
 | 校验时机 | `init()` 自动执行 | 由你控制（`main` 开头或任意位置） |
-| 校验结果 | 拿不到（失败直接退出） | 完整 `Result`（客户、features、有效期） |
+| 校验结果 | 拿不到（失败直接退出） | 完整 `Result`（客户、features、有效期，可用 `result.HasFeature("full")` 做功能开关） |
 | 适用场景 | fork 了 license-key-verify 仓库，追求最少代码 | 独立模块引用，需要按 feature 开关功能或展示授权信息 |
 
 > **fork 场景提示**：如果你 fork 了 license-key-verify 并用 `lkctl embed` 覆盖其 `pkg/license/key.go`，则只需 `import _ ".../v2/autocheck"` 一行即可（key.go 在 autocheck 的依赖包里，init 顺序天然正确）。本仓库两个示例都是独立模块引用，因此 key.go 放在自己的 `licensekey/` 子包中，且**必须列在 autocheck 之前 import**。
 
 ## 快速开始
 
-前提：[lkctl](https://github.com/cuilan/license-key-verify/releases/latest) 已下载、Go 1.23+ 已安装，且本仓库与 license-key-verify 仓库同级存放（示例的 `go.mod` 用 `replace` 指向本地 checkout，便于离线复现；你自己的工程中请删除 `replace`，改用 `go get github.com/cuilan/license-key-verify/v2@v2.0.0`）。
+前提：[lkctl](https://github.com/cuilan/license-key-verify/releases/latest) 已下载、Go 1.23+ 已安装，且本仓库与 license-key-verify 仓库同级存放（示例的 `go.mod` 用 `replace` 指向本地 checkout，便于离线复现；你自己的工程中请删除 `replace`，改用 `go get github.com/cuilan/license-key-verify/v2@v2.0.1`）。
 
 ```bash
 # 1. 生成密钥对（你本地，私钥绝不外发）
@@ -46,8 +46,8 @@ cd sdk && go build -o sdk.exe . && cd ..
 
 # 4. 获取本机指纹并分别签发
 lkctl fingerprint
-lkctl sign --private-key keys/private.pem --fingerprint <指纹> --out autocheck/license.lic
-lkctl sign --private-key keys/private.pem --fingerprint <指纹> --out sdk/license.lic
+lkctl sign --private-key keys/private.pem --fingerprint <指纹> --features full,api --out autocheck/license.lic
+lkctl sign --private-key keys/private.pem --fingerprint <指纹> --features full,api --out sdk/license.lic
 
 # 5. 运行
 ./autocheck/autocheck.exe     # license OK, application starts... / 成功启动
