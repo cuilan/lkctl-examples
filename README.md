@@ -30,7 +30,7 @@ lkctl-examples/
 
 ## 快速开始
 
-前提：[lkctl](https://github.com/cuilan/license-key-verify/releases/latest) 已下载、Go 1.23+ 已安装，且本仓库与 license-key-verify 仓库同级存放（示例的 `go.mod` 用 `replace` 指向本地 checkout，便于离线复现；你自己的工程中请删除 `replace`，改用 `go get github.com/cuilan/license-key-verify/v2@v2.0.1`）。
+前提：[lkctl](https://github.com/cuilan/license-key-verify/releases/latest) 已下载、Go 1.23+ 已安装，且本仓库与 license-key-verify 仓库同级存放（示例的 `go.mod` 用 `replace` 指向本地 checkout，便于离线复现；你自己的工程中请删除 `replace`，改用 `go get github.com/cuilan/license-key-verify/v2@v2.1.0`）。
 
 ```bash
 # 1. 生成密钥对（你本地，私钥绝不外发）

@@ -1,13 +1,13 @@
 {
-  "license_id": "41f684bf-5a70-a503-cd88-b9dae3a0989b",
-  "customer": "lkctl-examples",
-  "product": "lkctl-demo",
-  "fingerprint": "090499363c0b2202d7f025cd7dc2dedce65421c0a25eaccb55b890e64bf73625",
-  "issued_at": "2026-11-02T09:54:36.4316289+08:00",
-  "expires_at": "2027-11-02T09:54:36.4316289+08:00",
+  "license_id": "8b64db9e-977b-c27d-e48e-05b3915afb49",
+  "customer": "",
+  "product": "License Key Verify Tool",
+  "fingerprint": "2341faadb3ea1b51d183a66b65f209d956fbe77f9012f7f19f8a60a20c3912f4",
+  "issued_at": "2026-11-19T09:49:00.951534+08:00",
+  "expires_at": "2027-11-19T09:49:00.951534+08:00",
   "features": [
     "full",
     "api"
   ],
-  "signature": "nKeSEx3Da+aS7czZHZHG7rqC5hX1sOP8O0hX4pd+zOqSzohsZTLm+TPerhC/0vcReBWC1VoTu4V5FgwyetrYa1PI5QW7a1D8Wfb+VO6deTIPnxwfow3M0lNPJmW/mguWWazM6W0rd/2q5A8PGwABibXxhrO59VPehCV7i80P9qBHRad4QUplvVhuujvW4wis0DmZehxMSPWhtsi9KTM/zAty6BuB8cfxbm4DK+YqqveVLwcqEUEhvESXbheKY7U7XfgCHf/t8l5Vwh+WJyvay0A2dgYakp+G222jAwY86ZwRxKYWmXZcrGYyKWS9jZ/o/uuoBXrTbRB66ohQt9H4OA=="
+  "signature": "VT9M/Sga9J8uD6QnNbUDAtwyKNdnsCryzk5dfJukWA052uJorz5HOcaNrQkRG07awMjZA/wWsyfFUs+8w8Vh3VR5VIL3zhDHeoYwZCpKFK+qLkvdieyMOFE4eK/oKOxv+OvjCidrI/e2nIl9CKE3HFPo5/Fd/nUveUIcWQpmsOiUfxuvjXjYVLm8MBEI/lgRhySg/t7q2IIcTcPeF9/bRIxo5t4ggDcfGVCtw23KTFgwh7oimc1rH584m+kCz9vTamqVMjK8YSC2kS7b1AZqFgG1oAegIWj2vX86ni4dWLdCK/pgM3UCpjwGaQZylz8A/nqoGyVkkSTMtZt/aRRbCA=="
 }

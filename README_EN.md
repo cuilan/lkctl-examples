@@ -30,7 +30,7 @@ lkctl-examples/
 
 ## Quick Start
 
-Prerequisites: [lkctl](https://github.com/cuilan/license-key-verify/releases/latest) downloaded, Go 1.23+ installed, and this repo checked out next to license-key-verify (the examples' `go.mod` uses a `replace` to the local checkout for offline reproduction; in your own project drop the `replace` and use `go get github.com/cuilan/license-key-verify/v2@v2.0.1`).
+Prerequisites: [lkctl](https://github.com/cuilan/license-key-verify/releases/latest) downloaded, Go 1.23+ installed, and this repo checked out next to license-key-verify (the examples' `go.mod` uses a `replace` to the local checkout for offline reproduction; in your own project drop the `replace` and use `go get github.com/cuilan/license-key-verify/v2@v2.1.0`).
 
 ```bash
 # 1. Generate a key pair (on your machine; never ship the private key)
